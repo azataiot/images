@@ -1,0 +1,143 @@
+
+      <head>
+      <meta 
+        http-equiv="Content-Security-Policy"
+        content="frame-src https://www.youtube.com https://view.datalore.jetbrains.com https://datalore.azat.ai data://* ;"
+      >
+      <link id="datalore-style" rel="stylesheet" href="https://datalore.azat.ai/index.css?v=313">
+      <script>
+        document.documentElement.setAttribute("theme", "idea");
+        document.documentElement.setAttribute("sandbox", true);
+        function updateHeight() {
+          window.parent.postMessage({iframeToResize: 'DmvYKwAInWLqMDCmX0iyxt', desiredHeight: document.documentElement.scrollHeight}, '*');
+        }
+        window.addEventListener('load', function() {
+          if(window.ResizeObserver) {
+            var ro = new ResizeObserver(updateHeight);
+            ro.observe(document.body);
+          } else {
+            setInterval(updateHeight, 1000);
+          }
+        });
+        window.addEventListener('resize', updateHeight); 
+      </script>
+      <base href="https://datalore.azat.ai/notebook/06Li8SQlRLcsqEyogd5ba4/4IDCZzzGpbFuWtoxAza4nk/">
+      </head>
+      <body class="sandbox-iframe" >
+        <html lang="en">
+   <head>
+       <script type="text/javascript" data-lets-plot-script="library" src="https://cdn.jsdelivr.net/gh/JetBrains/lets-plot@v2.4.0/js-package/distr/lets-plot.min.js"></script>
+   </head>
+   <body>
+          <div id="vTwZ3p"></div>
+   <script type="text/javascript" data-lets-plot-script="plot">
+       var plotSpec={
+"data":{
+},
+"ggsize":{
+"width":500,
+"height":370
+},
+"ggtitle":{
+"text":"Chart"
+},
+"kind":"plot",
+"scales":[{
+"aesthetic":"size",
+"scale_mapper_kind":"identity",
+"na_value":0,
+"guide":"none"
+},{
+"aesthetic":"x",
+"discrete":true,
+"breaks":["S&P500","BIST100","BISTALL","Gold","Bitcoin"],
+"limits":["S&P500","BIST100","BISTALL","Gold","Bitcoin"],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"y",
+"discrete":true,
+"breaks":["S&P500","BIST100","BISTALL","Gold","Bitcoin"],
+"limits":["Bitcoin","Gold","BISTALL","BIST100","S&P500"],
+"expand":[0.0,0.0]
+},{
+"aesthetic":"color",
+"name":"",
+"breaks":[-1.0,-0.5,0.0,0.5,1.0],
+"limits":[-1.0,1.0],
+"na_value":"rgba(0,0,0,0)",
+"scale_mapper_kind":"color_gradient2",
+"low":"#B3412C",
+"mid":"#EDEDED",
+"high":"#326C81"
+},{
+"aesthetic":"fill",
+"name":"",
+"breaks":[-1.0,-0.5,0.0,0.5,1.0],
+"limits":[-1.0,1.0],
+"na_value":"rgba(0,0,0,0)",
+"scale_mapper_kind":"color_gradient2",
+"low":"#B3412C",
+"mid":"#EDEDED",
+"high":"#326C81"
+}],
+"layers":[{
+"na_text":"",
+"label_format":".2f",
+"show_legend":true,
+"tooltips":{
+"tooltip_lines":["@corr"],
+"tooltip_formats":[{
+"field":"@corr",
+"format":".2f"
+}]
+},
+"sampling":{
+"name":"none"
+},
+"geom":"point",
+"data":{
+"x":["S&P500","S&P500","S&P500","S&P500","S&P500","BIST100","BIST100","BIST100","BIST100","BIST100","BISTALL","BISTALL","BISTALL","BISTALL","BISTALL","Gold","Gold","Gold","Gold","Gold","Bitcoin","Bitcoin","Bitcoin","Bitcoin","Bitcoin"],
+"y":["S&P500","BIST100","BISTALL","Gold","Bitcoin","S&P500","BIST100","BISTALL","Gold","Bitcoin","S&P500","BIST100","BISTALL","Gold","Bitcoin","S&P500","BIST100","BISTALL","Gold","Bitcoin","S&P500","BIST100","BISTALL","Gold","Bitcoin"],
+"corr":[1.0,0.38312828004629873,0.3887209785935531,0.06089920201599491,0.2413852933781172,0.38312828004629873,1.0,0.9977081072330722,0.23863291821455085,0.16350457515570668,0.3887209785935531,0.9977081072330722,1.0,0.2355912630128629,0.16519442141266988,0.06089920201599491,0.23863291821455085,0.2355912630128629,1.0,0.08397774438503679,0.2413852933781172,0.16350457515570668,0.16519442141266988,0.08397774438503679,1.0],
+"corr_abs":[1.0,0.38312828004629873,0.3887209785935531,0.06089920201599491,0.2413852933781172,0.38312828004629873,1.0,0.9977081072330722,0.23863291821455085,0.16350457515570668,0.3887209785935531,0.9977081072330722,1.0,0.2355912630128629,0.16519442141266988,0.06089920201599491,0.23863291821455085,0.2355912630128629,1.0,0.08397774438503679,0.2413852933781172,0.16350457515570668,0.16519442141266988,0.08397774438503679,1.0]
+},
+"mapping":{
+"x":"x",
+"y":"y",
+"size":"corr_abs",
+"color":"corr"
+},
+"size_unit":"x"
+}],
+"coord":{
+"name":"fixed",
+"xlim":[-0.6,4.6],
+"ylim":[-0.6,4.6]
+},
+"theme":{
+"axis_title":{
+"blank":true
+},
+"axis_line":{
+"blank":true
+},
+"panel_grid":{
+"blank":true
+},
+"axis_ticks_x":{
+"blank":false
+},
+"axis_ticks_y":{
+"blank":false
+}
+},
+"mapping":{
+}
+};
+       var plotContainer = document.getElementById("vTwZ3p");
+       LetsPlot.buildPlotFromProcessedSpecs(plotSpec, -1, -1, plotContainer);
+   </script>
+   </body>
+</html>
+      </body>
+    
